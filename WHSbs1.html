@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHSbs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #FFFFFF; /* Default background color (white) */
+            color: black; /* Default text color */
+        }
+        h1 {
+            color: black; /* Color for the Welcome text */
+        }
+        .small-text {
+            font-size: 14px;
+            color: gray;
+        }
+        a {
+            color: #FF0000; /* Gold color for the link */
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        var password;
+        var pass1 = "WHSbs";
+
+        password = prompt('Enter password:', '');
+
+        if (password == pass1) {
+            alert('Welcome');
+        } else {
+            window.location = "https://www.google.com";
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p class="small-text">WHS bs Official Website</p>
+    <p><a href="https://www.youtube.com/watch?v=A5NbzhTI-T8" target="_blank">Mr. Todd Crash Out</a></p>
+</body>
+</html>
