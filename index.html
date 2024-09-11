@@ -29,14 +29,27 @@
         }
     </style>
     <script>
-        var password;
-        var pass1 = "Western Highschool";
+        var firstPassword;
+        var secondPassword;
+        var correctFirstPassword = "Western Highschool";
+        var correctSecondPassword = "DO NOT SHARE"; 
 
-        password = prompt('Enter Code:', '');
-
-        if (password == pass1) {
-            /* alert('Welcome'); */
+        // Prompt for the first password
+        firstPassword = prompt('Enter the code:', '');
+        if (firstPassword === correctFirstPassword) {
+            // Prompt for the second password if the first one is correct
+            secondPassword = prompt('the second pass is 123', '');
+            if (secondPassword === correctSecondPassword) {
+                // Both passwords are correct, proceed with the website
+                // Optionally, show a welcome message or do something
+            } else {
+                // Second password is incorrect
+                alert('Incorrect second password. Redirecting to Google.');
+                window.location = "https://www.google.com";
+            }
         } else {
+            // First password is incorrect
+            alert('Incorrect first password. Redirecting to Google.');
             window.location = "https://www.google.com";
         }
     </script>
